@@ -6,6 +6,7 @@ import About from "../About/About";
 import WhatIDo from "../Works/WhatIDo";
 import Contact from "../Contact/Contact";
 import Footer from "../../components/Footer/Footer";
+
 import "./Landing.css";
 
 function Landing() {
