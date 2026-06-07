@@ -1,0 +1,86 @@
+.contact-section {
+    min-height: 100vh;
+    background: #000;
+    color: #d7d7d3;
+    position: relative;
+    padding: 120px 120px 80px;
+}
+
+
+/* top divider */
+
+.contact-top-line {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, .08);
+}
+
+
+/* vertical guide */
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 90px;
+    width: 1px;
+    background: rgba(255, 255, 255, .08);
+}
+
+.contact-content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.contact-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    opacity: .85;
+}
+
+.contact-description {
+    width: 700px;
+    font-size: 20px;
+    line-height: 1.65;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .82);
+    margin-bottom: 120px;
+}
+
+
+/* giant email */
+
+.contact-email {
+    font-size: clamp(6rem, 11vw, 14rem);
+    font-weight: 900;
+    line-height: .9;
+    letter-spacing: -0.08em;
+    color: #d7d7d3;
+    margin-bottom: 140px;
+}
+
+
+/* bottom row */
+
+.contact-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-links a {
+    color: #d7d7d3;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: .04em;
+    transition: .3s;
+}
+
+.contact-links a:hover {
+    opacity: .6;
+}

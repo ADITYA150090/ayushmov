@@ -1,0 +1,84 @@
+.timeline-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 50;
+}
+
+.timeline-ruler {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    margin-bottom: 20px;
+}
+
+.tick {
+    width: 1px;
+    height: 10px;
+    background: white;
+    opacity: .5;
+}
+
+.major {
+    height: 20px;
+}
+
+.playhead {
+    position: absolute;
+    top: -15px;
+    bottom: -140px;
+    width: 2px;
+    background: white;
+    transition: left .6s ease;
+}
+
+.playhead-marker {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+}
+
+.timeline-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.chapter {
+    width: 180px;
+    cursor: pointer;
+}
+
+.chapter img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    opacity: .65;
+    border: 1px solid rgba(255, 255, 255, .15);
+    transition: .4s;
+}
+
+.chapter.active img {
+    opacity: 1;
+    border: 2px solid white;
+    transform: scale(1.03);
+}
+
+.chapter-number {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.chapter-title {
+    color: white;
+    margin-top: 8px;
+    font-size: 12px;
+}

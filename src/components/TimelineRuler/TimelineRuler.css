@@ -1,0 +1,44 @@
+.timeline-ruler {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 180px;
+    height: 80px;
+    z-index: 20;
+}
+
+.ruler {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 35px 15px 0;
+}
+
+.tick {
+    width: 1px;
+    background: rgba(255, 255, 255, .85);
+}
+
+.major {
+    height: 24px;
+}
+
+.minor {
+    height: 12px;
+}
+
+.start-time {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.end-time {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    color: white;
+    font-size: 14px;
+}

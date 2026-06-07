@@ -1,0 +1,26 @@
+.navbar {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    right: 20px;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.logo {
+    justify-self: start;
+}
+
+.about {
+    justify-self: center;
+}
+
+.works {
+    justify-self: center;
+}
+
+.contact {
+    justify-self: end;
+}

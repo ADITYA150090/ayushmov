@@ -1,0 +1,47 @@
+.services-section {
+    min-height: 100vh;
+    background: black;
+    color: white;
+    padding: 120px 80px;
+}
+
+.services-label {
+    font-size: 14px;
+    opacity: .7;
+}
+
+.services-title {
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: .9;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    color: #d8d8d4;
+}
+
+.services-list {
+    width: 100%;
+}
+
+.service-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    cursor: pointer;
+}
+
+.service-number {
+    font-size: 1.5rem;
+    opacity: .7;
+}
+
+.service-name {
+    font-size: 4rem;
+    font-weight: 300;
+    transition: .4s;
+}
+
+.service-row:hover .service-name {
+    transform: translateX(40px);
+}

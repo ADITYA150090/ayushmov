@@ -1,0 +1,88 @@
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    z-index: 100;
+}
+
+.bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, .85), rgba(0, 0, 0, .15), rgba(0, 0, 0, .85));
+}
+
+.hero-top {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    text-align: center;
+    color: white;
+}
+
+.hero-top h2 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.hero-top p {
+    margin-top: 10px;
+}
+
+.big-name {
+    position: absolute;
+    left: 20px;
+    bottom: 220px;
+    z-index: 5;
+    font-size: 12vw;
+    line-height: .9;
+    font-weight: 900;
+    color: #d7d7d4;
+    text-transform: uppercase;
+}
+
+.guide-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16%;
+    width: 1px;
+    background: rgba(255, 255, 255, .15);
+    z-index: 3;
+}
+
+.cross-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 48%;
+    height: 1px;
+    background: rgba(255, 255, 255, .1);
+    z-index: 3;
+}
+
+.pdf-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
